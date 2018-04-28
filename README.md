@@ -7,6 +7,7 @@ The original idea was to develop a mobile app that lets you interact with a stat
 1. A way to place a 3D object on a surface detected from a camera feed
 2. Logic to detect that the object has been touched (the ARCore Java SDK does not include this functionality out of the box at the time of writing)
 
+## Implementing Object Detection
 The following code snippet inside `ARActivity.java` is used to detect when an object has been tapped on the screen:
 
       Pose objectPose = mAnchors.get(0).getPose();
