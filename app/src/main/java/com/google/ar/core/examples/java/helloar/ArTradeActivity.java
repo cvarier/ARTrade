@@ -44,8 +44,8 @@ import javax.microedition.khronos.opengles.GL10;
  * plane to place a 3d model of an object. Each subsequent tap on the anchor point of the object
  * will pop up an AlertDialog.
  */
-public class HelloArActivity extends AppCompatActivity implements GLSurfaceView.Renderer {
-    private static final String TAG = HelloArActivity.class.getSimpleName();
+public class ArTradeActivity extends AppCompatActivity implements GLSurfaceView.Renderer {
+    private static final String TAG = ArTradeActivity.class.getSimpleName();
 
     // Rendering. The Renderers are created here, and initialized when the GL surface is created.
     private GLSurfaceView mSurfaceView;
@@ -285,7 +285,7 @@ public class HelloArActivity extends AppCompatActivity implements GLSurfaceView.
                                     @Override
                                     public void run() {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                                        builder.setTitle("OANDA ARTrade")
+                                        builder.setTitle("ARTrade")
                                                 .setMessage("Make a Trade - Coming Soon")
                                                 .setNeutralButton("OK", null);
 
@@ -375,7 +375,7 @@ public class HelloArActivity extends AppCompatActivity implements GLSurfaceView.
 
     private void showSnackbarMessage(String message, boolean finishOnDismiss) {
         mMessageSnackbar = Snackbar.make(
-            HelloArActivity.this.findViewById(android.R.id.content),
+            ArTradeActivity.this.findViewById(android.R.id.content),
             message, Snackbar.LENGTH_INDEFINITE);
         mMessageSnackbar.getView().setBackgroundColor(0xbf323232);
         if (finishOnDismiss) {
