@@ -1,4 +1,4 @@
-# OANDA-ARTrade
+# ARTrade
 A simple Android app created for the January 2018 OANDA hackathon. The app utilizes the ARCore SDK and detects flat surfaces as planes. It then lets you place a 3D object on a detected plane and interact with it.
 
 ## Inspiration
